@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Nanda Nail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Administração - Nanda Nail</h1>
+        <p>Aqui você pode ver os agendamentos e bloquear horários.</p>
+    </header>
+
+    <main>
+        <h2>Agendamentos</h2>
+        <ul id="listaAgendamentos">
+            <!-- Os agendamentos serão exibidos aqui -->
+        </ul>
+
+        <h2>Bloquear Horários</h2>
+        <form id="bloquearHorarioForm">
+            <label for="dataBloqueio">Data e Hora para Bloquear:</label>
+            <input type="datetime-local" id="dataBloqueio" required>
+            <button type="submit">Bloquear Horário</button>
+        </form>
+
+        <div id="msgAdmin"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nanda Nail. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script_admin.js"></script>
+</body>
+</html>
+
